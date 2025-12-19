@@ -1,0 +1,68 @@
+# + * / - 
+def soma(number1,number2):
+    print(number1+number2)
+
+def minus(number1,number2):
+    print(number1-number2)
+
+def times(number1,number2):
+    print(number1*number2)
+
+def divide(number1,number2):
+    if number1 or number2  == 0:
+        print('its not possible divide by 0')
+    else:
+        print(number1/number2)
+
+def up(number1,number2):
+    print(number1 ** number2)
+
+def calculate(number1,number2):
+    if signal == '*' :
+        times(number1,number2)
+    elif signal == '-':
+        minus(number1,number2)
+    elif signal == '/':
+        divide(number1,number2)
+    elif signal == '+':
+        soma(number1,number2)
+    elif signal == '^':
+        up(number1,number2)
+    else:
+        print(" ")
+        print("This operation it's not possible")
+
+# using the while loop method
+end = 'no'
+if end == 'no' or 'n':
+    while True:
+        number1 = int(input('tap a number: '))
+        number2 = int(input('tap another number: '))
+        signal = input('tap a math signal (+ - / * ^): ')
+        calculate(number1,number2)
+        end = input('du wanna calculate again? (yes/no): ')
+        if end == 'yes' or end == 'y':
+            print('good job')
+            break
+
+#using the for loop method 
+number1 = int(input('Enter a number: '))
+for i in range(1,11):
+    print(f'{number1}  X  {i} = {number1 * i}')
+    i+1
+
+for i in range(7):
+        i+1
+        print(i*'.')
+
+# fazer um for dentro de outro for
+for i in range(7):
+    for i in range(i):
+        i+1
+        print(i*'.')
+
+# using % signal to get results
+
+for i in range (1,21):
+    if i % 2 == 0:
+        print(i)
