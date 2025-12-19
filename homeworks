@@ -1,0 +1,21 @@
+def applay():
+    name = input("please enter your name: ")
+    sure = input("to clarify, your name is " + name + '? (y/n): ')
+    if sure == 'n':
+        return name
+    age = int(input("please enter your age: "))
+    sure = input("to clarify, your age is" + age + '? (y/n) ')
+    if sure == 'n':
+        return age
+    salary = input("please enter your salary: ")
+    sure = input("to clarify, your salary is" + salary + '? (y/n) ')
+    if sure == 'n':
+        return salary
+    family = input("Du have family's member? (y/n) ")
+    if family == 'y':
+        CFM = int(input("how much members your family has? "))
+
+
+print("welcome, new user")
+print("let's start a new adventure?")
+applay()
