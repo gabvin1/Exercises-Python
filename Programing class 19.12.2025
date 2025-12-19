@@ -57,7 +57,7 @@ for i in range(7):
 
 # fazer um for dentro de outro for
 for i in range(7):
-    for i in range(i):
+    for i in range(i): # para deixar varias repetições a partir de uma construção, so mudar o resultado para o valor do primeiro looping
         i+1
         print(i*'.')
 
