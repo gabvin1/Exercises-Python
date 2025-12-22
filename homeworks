@@ -14,7 +14,30 @@ def applay():
     family = input("Du have family's member? (y/n) ")
     if family == 'y':
         CFM = int(input("how much members your family has? "))
-
+        for i in range(CFM):
+                name = input("please enter your name: ")
+                sure = input("to clarify, your name is " + name + '? (y/n): ')
+                if sure == 'n':
+                    return name
+                age = int(input("please enter your age: "))
+                sure = input("to clarify, your age is" + age + '? (y/n) ')
+                if sure == 'n':
+                    return age
+                if age =>18 :
+                    print('Maior de idade')
+                else:
+                    print('Menor de idade')
+                salary = input("please enter your salary: ")
+                sure = input("to clarify, your salary is" + salary + '? (y/n) ')
+                if sure == 'n':
+                    return salary
+                i+1
+    password = input('tap a password: (including uper and lower case, number and speecial character') )
+    if len(password) < 6:
+        print('number minimun of characters is 6)
+    elif len(password) > 16:
+        print('number maximun of characters is 16)
+    
 
 print("welcome, new user")
 print("let's start a new adventure?")
