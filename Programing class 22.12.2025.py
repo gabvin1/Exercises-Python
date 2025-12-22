@@ -34,13 +34,15 @@ class contaBancaria():
 
 conta1 = contaBancaria('Tenshi', '12345678910', 24, 'tenshikisekishiro@gmail.com', '61991234567', 6300)
 while True:
-    question1 = input('você deseja fazer um saque (1), deposito (2) ou ver o saldo disponível (3)? ')
+    question1 = input('você deseja fazer um saque (1), deposito (2), ver o saldo disponível (3) ou ver dados de usuario (4)? ')
     if question1 == '1':
         conta1.saque()
     if question1 == '2':
         conta1.deposito()
     if question1 == '3':
         conta1.showvalue()
+    if question1 == '4':
+        print(conta1.nome,conta1.cpf,conta1.idade, conta1.email, conta1.telefone)
     outraacao = input('deseja realizar outra ação? (y/n)')
     if outraacao == 'n':
         break
