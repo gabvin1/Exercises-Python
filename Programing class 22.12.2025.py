@@ -43,6 +43,31 @@ while True:
         conta1.showvalue()
     if question1 == '4':
         print(conta1.nome,conta1.cpf,conta1.idade, conta1.email, conta1.telefone)
+        id = 1
+        while id == 1:
+            dadoscorretos = input('os dados acima estão corretos? (y/n) ')
+            if dadoscorretos == 'n':
+                qname = input('o nome está correto? (y/n) ')
+                if qname == 'n':
+                    conta1.name = input('Inserir nome: ')
+                qcpf = input('o CPF está correto? (y/n): ')
+                if qcpf == 'n':
+                    print('o CPF n pode ser mudado, entre em contato com a agência para mudá-lo ')
+                qidade = input('a idade está correto? (y/n) ')
+                if qidade == 'n':
+                    conta1.idade = int(input('inserir idade: '))
+                qemail = input('Seu email está correto? (y/n) ')
+                if qemail == 'n':
+                    conta1.email = input('inserir email: ')
+                qtelefone = input('seu telefone está correto? (y/n) ')
+                if qtelefone == 'n':
+                    conta1.telefone = int(input('inserir telefone: '))
+            print(conta1.nome, conta1.cpf, conta1.idade, conta1.email, conta1.telefone)
+            dadoscorretos = input('os dados acima estão corretos? (y/n) ')
+            if dadoscorretos == 'y':
+                id = 2
+
     outraacao = input('deseja realizar outra ação? (y/n)')
     if outraacao == 'n':
         break
+
