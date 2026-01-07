@@ -1,0 +1,24 @@
+#montar um gerador de senhas
+import random
+alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','v','w','x','y','z']
+numeros = ['0','1','2','3','4','5','6','7','8','9']
+caracter_especial = ['!','@','#','$','%','^','&','*']
+
+todos = alphabet + numeros + caracter_especial
+
+senha = input('Você quer uma senha nova: (y/n)')
+if senha == 'y':
+    senha_gerada = ""
+    for i in range(8):  # tamanho da senha
+        senha_gerada += random.choice(todos)
+    print('Recomendação de senha:', senha_gerada)
+    confirm_senha = input('Confirmar Senha: ')
+    redo = 1
+    while redo == 1:
+        if confirm_senha == senha_gerada:
+            redo == 0
+            print('Senha definida')
+        else:
+            print('Senha incorreta')
+else:
+    print('Senha não solicitada')
