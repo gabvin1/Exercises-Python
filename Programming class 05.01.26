@@ -12,12 +12,12 @@ if senha == 'y':
     for i in range(8):  # tamanho da senha
         senha_gerada += random.choice(todos)
     print('Recomendação de senha:', senha_gerada)
-    confirm_senha = input('Confirmar Senha: ')
     redo = 1
     while redo == 1:
+        confirm_senha = input('Confirmar Senha: ')
         if confirm_senha == senha_gerada:
-            redo == 0
             print('Senha definida')
+            redo = 0
         else:
             print('Senha incorreta')
 else:
