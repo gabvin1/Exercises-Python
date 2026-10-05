@@ -1,0 +1,4 @@
+# faznendo coisas com RPG rsrsrs
+SRPG = [ ('Dungeons & Dragons (D&D)', '1974', 'Gary Gygax e Dave Arneson'),('Call of Cthulhu', '1981', 'H.P. Lovecraft'), ('Altaris', '2021', 'Tiago Junges'), ('Avatar Legends', '2021', 'Brendan Conway')]
+[sistema for (sistema, ano, criador) in SRPG]
+['Dungeons & Dragons (D&D)', 'Call of Cthulhu', 'Altaris', 'Avatar Legends']
