@@ -2,3 +2,12 @@
 SRPG = [ ('Dungeons & Dragons (D&D)', '1974', 'Gary Gygax e Dave Arneson'),('Call of Cthulhu', '1981', 'H.P. Lovecraft'), ('Altaris', '2021', 'Tiago Junges'), ('Avatar Legends', '2021', 'Brendan Conway')]
 [sistema for (sistema, ano, criador) in SRPG]
 ['Dungeons & Dragons (D&D)', 'Call of Cthulhu', 'Altaris', 'Avatar Legends']
+#aprender sobre return e lambda
+composto = lambda p1 , p2: p1 + '_' + p2
+print(composto('beija', 'flor'))
+beija_flor
+def composto(p1,p2):
+	return p1 + '_' + p2
+
+print(composto('beija', 'flor'))
+beija_flor
